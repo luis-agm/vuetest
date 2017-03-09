@@ -16,7 +16,7 @@ export default {
   ],
   output: {
     path: __dirname,
-    publicPath: '/',
+    publicPath: '/public/',
     filename: 'bundle.js'
   },
   resolve: {
@@ -96,7 +96,8 @@ export default {
       '__PROD__': JSON.stringify(false)
     }),
     new webpack.ProvidePlugin({
-      'Vue': 'vue'
+      'Vue': 'vue',
+      'VueMaterial': 'vue-material'
     }),
     new CopyWebpackPlugin([
       { from: 'static' }

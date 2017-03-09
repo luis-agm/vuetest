@@ -11,10 +11,6 @@ import {
 
 import ExampleComponent from 'components/Example';
 
-import VueMaterial from 'vue-material';
-
-Vue.use(VueMaterial);
-
 export default Vue.extend({
 
   mixins: [ EventManagerMixin, FadeTransitionMixin ],
