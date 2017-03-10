@@ -1,7 +1,6 @@
 import VueRouter from 'vue-router';
 
 import HomePageComponent from 'containers/Homepage';
-import TestComponent from 'containers/Test';
 
 Vue.use( VueRouter );
 
@@ -25,13 +24,9 @@ class Router extends VueRouter {
 
     this.map({
 
-      '*': {
+      '/': {
         name: "home",
         component: HomePageComponent
-      },
-      '/yourMom': {
-        name:"yourmom",
-        component: TestComponent
       }
 
     });

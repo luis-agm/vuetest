@@ -16,7 +16,7 @@ export default {
   ],
   output: {
     path: __dirname,
-    publicPath: '/public/',
+    publicPath: '/',
     filename: 'bundle.js'
   },
   resolve: {
@@ -60,7 +60,6 @@ export default {
       },
       {
         test: /\.css$/,
-        exclude: /node_modules/,
         use: [{
           loader: 'style-loader'
         },

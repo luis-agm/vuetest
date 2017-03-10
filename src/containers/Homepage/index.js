@@ -9,7 +9,7 @@ import {
   WINDOW_RESIZE
 } from 'config/messages';
 
-import ExampleComponent from 'components/Example';
+import CardComponent from 'components/CardComp';
 
 import VueMaterial from 'vue-material';
 
@@ -48,6 +48,6 @@ export default Vue.extend({
   },
 
   components: {
-    'example-component': ExampleComponent
+    'example-component': CardComponent
   }
 });
